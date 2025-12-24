@@ -1,0 +1,227 @@
+<html>
+<head>
+    <link rel="stylesheet" href="calcStyles.css">
+    <title>Car Cost Analyzer</title>
+</head>
+<body>
+    <header>
+
+        <div class="header-container">
+            <a href="index.html"><button class="nav-button">Go Back</button></a>
+            <h1>Car Cost Analyzer</h1>
+        </div>
+        <!--
+		<div style="text-align: right;">
+			<div class="button-like">
+				<a href="#home">Home</a>
+				<a href="#maintenance">Maintenance Cost Calc</a>
+				<a href="#operational">Operational Cost Calc</a>
+				<a href="#service">Service Cost Calc</a>
+				<a href="#other">Other Cost Calc</a>
+				<a href="#depreciation">Vehicle Depreciation Calc</a>
+			</div>
+		</div> -->
+    </header>
+    <main>
+        <br>
+        <div class="form-container">
+            <form id="vehicleForm">
+
+
+                    <!-- Vehicle Details -->
+                    <h2>Basic Details</h2>
+                    <p><b>Enter the basic information of the vehicle you plan to purchase.</b></p><br>
+
+                    <table>
+                        <tr>
+                            <td>Car Name:</td>
+                            <td><input type="text" id="carName" name="carName"></td>
+                        </tr>
+                        <tr>
+                            <td>Car Model Year:</td>
+                            <td>
+                                <select id="carYear" name="carYear">
+                                    <option value="" disabled selected>Select Year</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024" >2024</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Car Transmission:</td>
+                            <td>
+                                <select id="carTransmission" name="carTransmission">
+                                    <option value="" disabled selected>Select Transmission</option>
+                                    <option value="auto">Automatic</option>
+                                    <option value="manual">Manual</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fuel Type:</td>
+                            <td>
+                                <select id="carGas" name="carGas">
+                                    <option value="" disabled selected>Select Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Car Price (Rs.):</td>
+                            <td><input type="text" id="carPrice" name="carPrice"></td>
+                        </tr>
+                        <tr>
+                            <td>Years of Use:</td>
+                            <td><input type="text" id="carYrUse" name="carYrUse"></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Travel Distance (KM):</td>
+                            <td> <input type="text" id="carTDmonth" name="carTDmonth"></td>
+                        </tr>
+                    </table><br>
+                
+
+                    <!-- Maintenance Costs -->
+                    <h2>Maintenance Cost</h2>
+                    <p><b>Costs to keep the vehicle in good working condition, e.g., tyre, brake, fluids, battery.</b></p><br>
+
+                    <table>
+                        <tr>
+                            <td>Tyre Change Cost (Rs.):</td>
+                            <td> <input type="text" id="tyreChangeCost" name="tyreChangeCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Brake Pad & Liner Cost (Rs.):</td>
+                            <td><input type="text" id="brakePadLinerCost" name="brakePadLinerCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Transmission Fluid Cost (Rs.):</td>
+                            <td><input type="text" id="transmissionFluidCost" name="transmissionFluidCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Coolant Replacement Cost (Rs.):</td>
+                            <td><input type="text" id="coolantReplaceCost" name="coolantReplaceCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Battery Replacement Cost (Rs.):</td>
+                            <td><input type="text" id="batteryReplacementCost" name="batteryReplacementCost"></td>
+                        </tr>
+                    </table><br>
+
+                    <!-- Operational Costs -->
+                    <h2>Operational Cost</h2>
+                    <p><b>Costs to operate the vehicle, including fuel and insurance.</b></p><br>
+
+                    <table>
+                        <tr>
+                            <td>Fuel Cost (Rs.):</td>
+                            <td><input type="text" id="fuelCost" name="fuelCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Fuel Efficiency (KM/L):</td>
+                            <td><input type="text" id="fuelEfficiency" name="fuelEfficiency"></td>
+                        </tr>
+                        <tr>
+                            <td>Car Cost Evaluated by Insurance (Rs.):</td>
+                            <td><input type="text" id="carCostByInsurance" name="carCostByInsurance"></td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Cost per Year (%):</td>
+                            <td><input type="text" id="insuranceCost" name="insuranceCost"></td>
+                        </tr>
+                    </table><br>
+
+                    <!-- Service Costs -->
+                    <h2>Service Cost</h2>
+                    <p><b>Costs related to servicing the vehicle, emission tests, and car washes.</b></p><br>
+
+                    <table>
+                        <tr>
+                            <td>Vehicle Emission Test Cost (Rs.):</td>
+                            <td> <input type="text" id="vehicleEmissionCost" name="vehicleEmissionCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Full Service Cost (Rs.):</td>
+                            <td><input type="text" id="serviceCost" name="serviceCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Car Wash Cost (Rs.):</td>
+                            <td><input type="text" id="carWashCost" name="carWashCost"></td>
+                        </tr>
+                    </table>
+
+                    <!-- Other Costs -->
+                    <h2>Other Costs</h2>
+                    <p><b>Additional costs not covered above, e.g., lease and miscellaneous expenses.</b></p><br>
+
+                    <table>
+                        <tr>
+                            <td>Supplementary Cost (%):</td>
+                            <td> <input type="text" id="supplementaryCost" name="supplementaryCost"></td>
+                        </tr>
+                        <tr>
+                            <td>Lease Amount (Rs.):</td>
+                            <td><input type="text" id="lease" name="lease"></td>
+                        </tr>
+                        <tr>
+                            <td>Lease Rate (%):</td>
+                            <td><input type="text" id="leaseRate" name="leaseRate"></td>
+                        </tr>
+                    </table>
+
+
+                    <center>
+                        <button type="button" id="calc">Calculate Car Cost</button>
+                    </center>
+
+            </form>
+
+            <!-- Results Section (Initially Hidden) 
+            <section id="finalResults" style="display:none;">
+                <hr>
+                <h2>Vehicle Depreciation</h2>
+                <section id="depreciation"></section>
+
+                <hr>
+                <h2>Final Results</h2>
+                <section id="results"></section>
+            </section> -->
+
+            <!-- Results Section (Initially Hidden) -->
+            <section id="finalResults" style="display:none;">
+                <section id="depreciation" class="results-card"></section>
+                <section id="results" class="results-card"></section>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Car Cost Calculator</p>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+</html>
