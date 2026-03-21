@@ -63,6 +63,10 @@ Developed as a continuation of the TCO Calculator project to create a **user-fri
 
 ---
 
-## 📄 License
-This project is intended for educational and research purposes.  
-License information can be added if required.
+## License
+
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
+
+You are free to view and learn from the code, but you may not use this project for commercial purposes.
+
+See the [LICENSE](LICENSE.md) file for full details.
